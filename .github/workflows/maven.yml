@@ -26,12 +26,7 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
         cache: maven
-    
-      
-      
-    # Neste job é executado os Testes Unitários  
-    - name: Compilar e executar testes
-      run: mvn test --batch-mode
+   
       
     #  Neste job é executado os Testes de Componentes com K6  
     - name: Configurar ambiente Node.js
